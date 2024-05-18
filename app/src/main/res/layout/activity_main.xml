@@ -6,6 +6,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4dp"
+        android:background="@color/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/up_main_title" />
+
+    <ImageButton
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:contentDescription="@string/searchBatton"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_search_in"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userSearchField"
+        tools:srcCompat="@drawable/background_search_in"
+        tools:ignore="DuplicateSpeakableTextCheck"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="88dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:focusableInTouchMode="false"
+        android:text="@string/searchIn"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_button"
+        app:layout_constraintStart_toStartOf="@+id/search_button"
+        app:layout_constraintTop_toTopOf="@+id/search_button"
+        app:layout_constraintVertical_bias="0.588"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="4dp"
+        android:focusableInTouchMode="false"
+        app:layout_constraintBottom_toBottomOf="@+id/search_button"
+        app:layout_constraintEnd_toEndOf="@+id/search_button"
+        app:layout_constraintTop_toTopOf="@+id/search_button"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/arow_down" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchRecycler"
+        android:layout_width="239dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_button"
+        tools:visibility="visible" />
 
     <EditText
         android:id="@+id/userSearchField"
@@ -16,25 +77,26 @@
         android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.01999998" />
 
     <Button
         android:id="@+id/searchButton"
-        android:layout_width="101dp"
-        android:layout_height="60dp"
+        android:layout_width="83dp"
+        android:layout_height="54dp"
+        android:background="@drawable/search_buton"
         android:isScrollContainer="false"
         app:icon="@android:drawable/ic_menu_search"
         app:iconPadding="1dp"
-        app:iconSize="55dp"
+        app:iconSize="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintHorizontal_bias="0.963"
         app:layout_constraintStart_toStartOf="@+id/userSearchField"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintVertical_bias="0.15" />
 
     <Button
         android:id="@+id/stopProxy"
@@ -43,8 +105,8 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.987"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.358" />
+        app:layout_constraintVertical_bias="0.263" />
 </androidx.constraintlayout.widget.ConstraintLayout>

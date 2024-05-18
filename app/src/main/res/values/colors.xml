@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#EFEFEF</color>
+    <color name="title_flor">#D8C8BC</color>
+    <color name="link_store">#A47B5A</color>
 </resources>

@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">openmarket</string>
+    <string name="search">Что вы ищете?</string>
+    <string name="searchIn">Искать в</string>
+    <string name="marketIn">В магазин</string>
+
+    <string name="searchBatton"> </string>
+
+    <string name="wb">Wildberries</string>
+    <string name="ozon">Ozon</string>
+    <string name="yanMarket">Yandex market</string>
+    <string name="sberMarket">Sbermarket</string>
+
+    <string name="titleTime">iPhone 14 Pro 256GB</string>
+    <string name="priceTime">127 832 p.</string>
 </resources>

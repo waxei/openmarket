@@ -10,6 +10,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.volkovdev.openmarket.services.ProxyService
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             Log.d("Main","Trying to start...")
             startService(intent)
-            Log.d("Main","Started")
             val vibratorService = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
             vibratorService.vibrate(200)
 
@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         val stop:Button = findViewById(R.id.stopProxy)
         stop.setOnClickListener{
             stopService(intent)
+            Log.d("Main","Service stopped")
         }
 
 

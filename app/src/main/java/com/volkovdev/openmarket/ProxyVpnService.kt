@@ -8,7 +8,7 @@ import java.io.FileOutputStream
 import java.net.InetAddress
 import java.net.Socket
 
-class ProxyService : VpnService() {
+class ProxyServiceeeeee : VpnService() {
 
     private var vpnThread: Thread? = null
     private var vpnInterface: ParcelFileDescriptor? = null
