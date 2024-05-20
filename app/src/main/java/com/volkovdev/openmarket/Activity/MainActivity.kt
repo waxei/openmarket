@@ -77,10 +77,7 @@ class MainActivity : AppCompatActivity() {
             adapter.updateItems(it)
         })
 
-//-------------------------**************************------------------------------------
-
-            // Настройка кнопки test
-            val testButton = findViewById<Button>(R.id.test)
+        val testButton = findViewById<Button>(R.id.test)
         testButton.setOnClickListener {
             handleCheckboxes()
         }
