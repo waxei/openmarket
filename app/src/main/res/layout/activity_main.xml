@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
@@ -22,13 +23,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:contentDescription="@string/searchBatton"
         android:layout_marginTop="10dp"
         android:background="@drawable/background_search_in"
+        android:contentDescription="@string/searchBatton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userSearchField"
-        tools:srcCompat="@drawable/background_search_in"
-        tools:ignore="DuplicateSpeakableTextCheck"/>
+        tools:ignore="DuplicateSpeakableTextCheck,TouchTargetSizeCheck"
+        tools:srcCompat="@drawable/background_search_in" />
 
     <TextView
         android:id="@+id/textView2"
@@ -75,6 +76,7 @@
         android:ems="10"
         android:hint="Например, iPhone 15 pro 256"
         android:inputType="text"
+        android:textColorHint="#546E7A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.22"
@@ -109,4 +111,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.263" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:text="test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopProxy" />
 </androidx.constraintlayout.widget.ConstraintLayout>
