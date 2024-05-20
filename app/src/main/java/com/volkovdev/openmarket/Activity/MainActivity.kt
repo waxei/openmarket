@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // Метод для проверки состояния чекбоксов
+    // Метод для проверки состояния чекбоксоv
     private fun handleCheckboxes() {
         val checkedItems = mutableListOf<String>()
         viewModel.items.value?.forEach {
