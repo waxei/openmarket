@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="385dp"
+        android:layout_height="184dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_resoult" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="122dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="18dp"
+        android:background="@color/background"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView">
+
+        <ImageView
+            android:id="@+id/resoultImageItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/title_flor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/image" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/market"
+        android:layout_width="214dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="monospace"
+        android:text="@string/wb"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+
+    <EditText
+        android:id="@+id/titleResoult"
+        android:layout_width="215dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="start|top"
+        android:inputType="text|textMultiLine"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:text="@string/titleTime"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/market" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="214dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="@string/priceTime"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/titleResoult" />
+
+    <ImageButton
+        android:id="@+id/marketLink"
+        android:layout_width="215dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_button_magazin"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        app:srcCompat="@drawable/background_button_magazin"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/link_mag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/marketIn"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/marketLink"
+        app:layout_constraintEnd_toEndOf="@+id/marketLink"
+        app:layout_constraintStart_toStartOf="@+id/marketLink"
+        app:layout_constraintTop_toTopOf="@+id/marketLink" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
